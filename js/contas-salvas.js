@@ -55,7 +55,9 @@ function carregarContas() {
                     <span class="conta-indice">Nota: ${indiceFinal}</span>
                 </div>
             </div>
-            <button class="btn-delete-icon" data-nome="${nome}">🗑️</button>
+            <button class="btn-delete-icon" data-nome="${nome}">
+                <img src="../imagens/icones/lixeira.png" alt="Excluir">
+            </button>
         `;
         
         // Clique no item para visualizar
@@ -156,7 +158,7 @@ function exibirConta(nome, conta) {
     
     html += `
             <div class="result-item">
-                <span class="result-label"><strong>Média:</strong></span>
+                <span class="result-label"><strong>Índice de Proporção geral:</strong></span>
                 <span class="result-value"><strong>${conta.indices.proporcao.indice_final}</strong></span>
             </div>
         </div>
